@@ -1,38 +1,75 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.submission-table {
+  margin: 20px auto;
+  width: 90%;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submission-table th,
+.submission-table td {
+  border: 1px solid #000000;
+  padding: 8px;
+  text-align: left;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.submission-table th {
+  background-color: #f2f2f2;
 }
 
-.App-link {
-  color: #61dafb;
+.submission-form {
+  width: 50%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 90%;
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 20px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background-color: rgb(103, 103, 242);
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 20px;
+  width: 90%;
+}
+
+.btn:hover {
+  background-color: rgb(56, 56, 193);
+}
+
+.formBtn{
+  display: block;
+  margin: auto;
 }
